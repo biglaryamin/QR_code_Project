@@ -1,0 +1,16 @@
+{% load qr_code %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+<body>
+    <h2><span>full name: </span> {{full_name}}</h2>
+    <h2><span>username: </span> {{username}}</h2>
+    <h2><span>email: </span> {{email}}</h2>
+    {% qr_from_text username size="m" image_format="png" error_correction="L" %}
+</body>
+</html>
