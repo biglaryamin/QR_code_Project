@@ -1,7 +1,7 @@
 from django.urls import path
-from .views import application_qr_code_demo
+from .views import test
 
 
 urlpatterns = [
-    path('test', application_qr_code_demo),
+    path('test', test),
 ]
